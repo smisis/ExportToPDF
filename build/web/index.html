@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <!--script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script-->
+        <script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+        <!--<script src="js/jspdf.min.js" type="text/javascript"></script-->
+        <script src="js/html2canvas.js" type="text/javascript"></script>
+        <script src="js/createPDF.js" type="text/javascript"></script>
+        
+         <script src="//mrrio.github.io/jsPDF/examples/js/jquery/jquery-1.7.1.min.js"></script>
+       <!--script type="text/javascript" src="https://code.google.com/p/svg-edit/source/browse/trunk/editor/jquery-ui/jquery-ui-1.8.17.custom.min.js"></script>-->
+       <!--https://github.com/MrRio/jsPDF/blob/master/dist/jspdf.min.js
+       http://mrrio.github.io/jsPDF/examples/js/jquery/jquery-1.7.1.min.js-->
+         <script src="//mrrio.github.io/jsPDF/dist/jspdf.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body id="target">
+        <div id="loco">
+            <div class="kn-rich_text kn-view view_37" id="view_37"><h1 style="text-align: right;"><span style="color: #a5a5a5;" rel="color: #a5a5a5;">FACTURA</span></h1>
+                <hr></div><div class="kn-details kn-view view_36" id="view_36">
+
+                <div class="kn-details-column first" style="width: 50%; float: left;">
+
+                    <div class="kn-details-group column-1">
+
+                        <div   style="width: 219px;" class="kn-details-group-column">
+                            <table id="table1" class="kn-label-none">
+
+                                <tbody>
+                                    <tr id="trRazon0" class="field_345"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;"><strong>  Razon Social Bolanos </strong></span></td></tr>
+
+                                    <tr id="trRazon1" class="field_51"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;">No Where</span></td></tr>
+
+                                    <tr  id="trRazon2" class="field_168"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;">00000 - Over There (Albacete)</span></td></tr>
+
+                                    <tr  id="trRazon3" class="field_79"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;"><span class="55e7ebef2d95d5d643767f21">Albacete</span></span></td></tr>
+
+                                    <tr id="trRazon4" class="field_169"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;">NIF: 23456789</span></td></tr>
+
+                                    <tr id="trRazon5" class="field_170"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;">Tel: 123456789</span></td></tr>
+
+                                    <tr id="trRazon6" class="field_171"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;">Email: </span></td></tr>
+
+                                </tbody></table>
+                        </div>
+
+                    </div>                      
+
+
+                </div>
+
+                <div class="kn-details-column" style="width: 50%; float: left;">
+
+
+                    <div class="kn-details-group column-1">
+
+                        <div style="width: 247px;" class="kn-details-group-column">
+                            <table class="kn-label-left">
+
+                                <tbody><tr class="field_105"><th style="width: 131px;" class="kn-label"><span>Fecha de factura</span></th><td id="trFecha" class="kn-value"><span>12/09/2015</span></td></tr>
+
+                                    <tr  class="field_404"><th style="width: 131px;" class="kn-label"><span>Número de factura</span></th><td id="trNumero" class="kn-value"><span>4-2015</span></td></tr>
+
+                                </tbody></table>
+                        </div>
+
+                    </div>                      
+
+
+                    <div class="kn-details-group column-1">
+
+                        <div style="width: 188px;" class="kn-details-group-column">
+                            <table class="kn-label-none">
+
+                                <tbody><tr><td class="title" colspan="1"><span>CLIENTE:</span></td></tr>                                                                                                      
+
+                                    <tr id="cliente1" class="field_82"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;"><strong>SOCIEDAD</strong></span></td></tr>
+
+                                    <tr id="cliente2" class="field_173"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;">NIF: 1234</span></td></tr>
+
+                                    <tr id="cliente3" class="field_92"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;">DIRECCION</span></td></tr>
+
+                                    <tr id="cliente4" class="field_172"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;">POSTAL - LOCALIDAD ()</span></td></tr>
+
+                                    <tr id="cliente5" class="field_101"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;"><span class="55e7ebe82d95d5d643767eed">España</span></span></td></tr>
+
+                                </tbody></table>
+                        </div>
+
+                    </div>                      
+
+
+                </div>
+
+                <div class="clear"></div></div><div class="kn-table kn-view view_38" id="view_38">
+
+
+                <div class="kn-records-nav clearfix">
+
+
+                    <div style="clear:both;">
+
+
+                        <div class="kn-filters" id="view_38_filters" style="display: none; float: left;">
+                            <ul></ul>
+                        </div>
+
+
+
+                        <div class="kn-pagination">
+
+
+                            <div style="float: left;">
+
+                            </div>
+                        </div>
+                        <div class="clear"></div>  
+                        <div class="kn-filter-rule" style="display: none;"> 
+                            <span class="field">
+                                <select class="field" name="field"></select>
+                            </span>
+                            <span class="operator">
+                                <select class="operator" name="operator"></select>
+                            </span>
+                            <span class="value">
+                                <input name="value" type="text">
+                            </span>
+                            <input class="add" value="Añadir" type="button">
+                            <a class="remove" href="#">cancelar</a>
+                        </div>                                            
+                    </div>                    
+                </div>
+                    <table id="tableconceptos" style="margin-left: 0px; left: 0px;" class="kn-responsive kn-table-table">
+                    <thead> 
+
+                        <tr class="even"><th style="" class="field_335">
+
+
+                                <a href="#field_335|asc" address="true">
+
+                                    <span class="kn-sort-icon"></span>CANTIDAD
+
+                                </a>
+
+                            </th>
+
+
+                            <th class="field_122">
+
+
+                                <a href="#field_122|asc" address="true">
+
+                                    <span class="kn-sort-icon"></span>CONCEPTO
+
+                                </a>
+
+                            </th>
+
+
+                            <th class="field_334">
+
+
+                                <a href="#field_334|asc" address="true">
+
+                                    <span class="kn-sort-icon"></span>PRECIO
+
+                                </a>
+
+                            </th>
+
+
+                            <th class="field_124">
+
+
+                                <a href="#field_124|asc" address="true">
+
+                                    <span class="kn-sort-icon"></span>% IVA
+
+                                </a>
+
+                            </th>
+
+
+                            <th class="field_126">
+
+
+                                <a href="#field_126|asc" address="true">
+
+                                    <span class="kn-sort-icon"></span>% IRPF
+
+                                </a>
+
+                            </th>
+
+
+                        </tr></thead>
+                    <tbody id="bodyconceptos">
+                        <tr id="55fd09449cdad5b442f2f2ac"> 
+
+                            <td id="tdCantidad" style="" class="field_335 cell-edit"><span class="col-0">
+                                    1,00 
+                                </span></td>
+
+                            <td id="tdConcepto" class="field_122 cell-edit"><span class="col-1">
+                                    ASDASD323 
+                                </span></td>
+
+                            <td id="tdPrecio" class="field_334 cell-edit"><span class="col-2">
+                                    2,00 
+                                </span></td>
+
+                            <td id="tdIva" class="field_124"><span class="col-3">
+                                    0,04 
+                                </span></td>
+
+                            <td id="tdIrpf" class="field_126 cell-edit"><span class="col-4">
+                                    2,00 
+                                </span></td>
+
+                        </tr> 
+
+                        <tr class="even" id="560815691a28ec6b4102b168"> 
+
+                            <td style="" class="field_335 cell-edit"><span class="col-0">
+                                    1,00 
+                                </span></td>
+
+                            <td class="field_122 cell-edit"><span class="col-1">
+                                    1 
+                                </span></td>
+
+                            <td class="field_334 cell-edit"><span class="col-2">
+                                    5,00 
+                                </span></td>
+
+                            <td class="field_124"><span class="col-3">
+                                    0,21 
+                                </span></td>
+
+                            <td class="field_126 cell-edit"><span class="col-4">
+                                    2,00 
+                                </span></td>
+
+                        </tr> 
+
+                        <tr id="560961b8264e5c5c50b50385"> 
+
+                            <td style="" class="field_335 cell-edit"><span class="col-0">
+                                    1,00 
+                                </span></td>
+
+                            <td class="field_122 cell-edit"><span class="col-1">
+                                    1 
+                                </span></td>
+
+                            <td class="field_334 cell-edit"><span class="col-2">
+                                    1,00 
+                                </span></td>
+
+                            <td class="field_124"><span class="col-3">
+                                    0,21 
+                                </span></td>
+
+                            <td class="field_126 cell-edit"><span class="col-4">
+                                    23,33 
+                                </span></td>
+
+                        </tr> 
+
+                        <tr class="even" id="56096614ac897f854b9c0839"> 
+
+                            <td style="" class="field_335 cell-edit"><span class="col-0">
+                                    1,00 
+                                </span></td>
+
+                            <td class="field_122 cell-edit"><span class="col-1">
+                                    ASDASD 
+                                </span></td>
+
+                            <td class="field_334 cell-edit"><span class="col-2">
+                                    1,00 
+                                </span></td>
+
+                            <td class="field_124"><span class="col-3">
+                                    0,21 
+                                </span></td>
+
+                            <td class="field_126 cell-edit"><span class="col-4">
+                                    2,00 
+                                </span></td>
+
+                        </tr> 
+
+                        <tr id="560a068d49dd92851993ff4e"> 
+
+                            <td style="" class="field_335 cell-edit"><span class="col-0">
+                                    1,00 
+                                </span></td>
+
+                            <td class="field_122 cell-edit"><span class="col-1">
+                                    SDADASD 
+                                </span></td>
+
+                            <td class="field_334 cell-edit"><span class="col-2">
+                                    56,00 
+                                </span></td>
+
+                            <td class="field_124"><span class="col-3">
+                                    0,21 
+                                </span></td>
+
+                            <td class="field_126 cell-edit"><span class="col-4">
+                                    23,30 
+                                </span></td>
+
+                        </tr> 
+
+                    </tbody>
+                </table></div><div class="kn-details kn-view view_157" id="view_157">
+
+
+
+
+                <div class="kn-details-column first" style="width: 100%; float: left;">
+
+
+                    <div class="kn-details-group column-1">
+
+                        <div style="width: 45px;" class="kn-details-group-column">
+                            <table class="kn-label-none">
+
+                                <tbody><tr class="field_62"><td class="kn-value" colspan="1" style="padding-left: 0px;"><span style="padding-left: 0px;"></span></td></tr>
+
+                                </tbody></table>
+                        </div>
+
+                    </div>                      
+
+
+                </div>
+
+                <div class="clear"></div></div>
+            <div class="kn-rich_text kn-view view_169" id="view_169"><button id="cmd">Exportar Factura como PDF</button></div>
+
+        </div>
+        <div id="editor"></div>
+        <div class="clear"></div></div><div class="kn-rich_text kn-view view_169" id="view_169"></div>
+    
+    
+
+</body>
+</html>
